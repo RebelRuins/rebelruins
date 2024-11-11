@@ -1,0 +1,869 @@
+body, html {
+    height: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-size: cover;
+	background-position: center;	
+}
+body {
+  background-image: url("images/weber copy 2.png") ;
+background-size: auto;
+  background-color: rgb(242, 242, 242); /* Change to desired background color */
+  background-position: center;
+  margin: 0;
+  background-attachment: fixed;
+      position: relative;
+    top: -100px; /* Start off the screen (above the viewport) */
+    opacity: 0;
+      animation: slideDown 1s ease-out forwards; /* Trigger the animation */
+
+}
+.logo {
+    width: 85px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust margin as needed */ 
+    transition: transform 0.2s ease-in-out;
+}
+.logo:hover {
+      transform: scale(1.2);
+}
+
+h1t {
+    color: black;
+ 	font-size: 3.3vh;
+ 	font-family: "Times New Roman", Times, serif;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin: 0;
+    cursor: pointer;
+    
+}
+h2 {
+    color: white;
+        font-family: "Times New Roman", Times, serif;
+    font-size: 4vh;
+    font-style: italic;
+}
+p {
+    color: white;
+    font-family: helvetica;
+    font-size: 13px;
+    font-style: italic;
+}
+pt {
+    color: black;
+ 	font-size: 2.2vh;
+    font-style: italic;
+    font-weight: lighter;
+        cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+
+}
+
+nav {
+    margin-left: 30px;
+    align-items:center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items:center;    
+}
+nav ul li {
+    display: inline;
+    margin: 0px; /* Adjust margin as needed */
+    align-items:center;   
+}
+
+nav ul li a {
+    color: black;
+    font-size: 2.2vh; 
+    align-items:center;
+    padding: 15px;
+
+}
+a {
+    color: black; 
+    text-decoration: none;
+    font-size: 2.2vh; 
+}
+.w3-display-container{
+  position: relative;
+  height: 60%;
+
+}
+.w3-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top: 7px solid rgb(255, 215, 0);
+  border-bottom: 7px solid rgb(255, 215, 0);
+  
+
+}
+.mySlides {
+  width: 100%;
+    height: 100%;
+
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for fade effect */
+    object-fit: cover;
+
+}
+.activeSlide {
+  opacity: 1; /* Set opacity to 1 when the slide is active */
+
+}
+    /* Text and button overlay on slideshow */
+    .slideshow-text {
+      position: absolute;
+      bottom: 80px; /* Positions it at the bottom */
+      left: 80px; /* Positions it to the left */
+            right: 80px; /* Positions it to the left */
+      color: white;
+      font-family: Arial, sans-serif;
+      z-index: 2; /* Makes sure the text stays on top */
+    }
+
+    .slideshow-text h1 {
+      font-size: 72px;
+      margin: 0;
+     font-family: "Times New Roman", Times, serif;
+
+    }
+
+    .slideshow-text p {
+      font-size: 36px;
+      margin: 10px 0;
+            margin-left: 100px 0;
+
+      font-family: "Times New Roman", Times, serif;
+
+      padding-bottom: 20px;
+    }
+
+    .slideshow-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: black;
+      background-color: rgb(255, 215, 0);
+      border: 2px solid white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+  transition: 0.3s;
+  
+                                border-radius: 10px;
+
+
+
+    }
+
+    .slideshow-button:hover {
+                  background-color: white;
+                        border: 2px solid rgb(255, 215, 0);
+                              border-radius: 30px;
+
+
+
+
+    }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template: 150px / auto auto auto auto;
+  padding: 150px;
+}
+
+/* Dot navigation styles */
+.dots-container {
+  text-align: center;
+  margin-top: 35px;  
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  margin: 0 5px;
+  background-color: rgb(50,50,50);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.dot:hover {
+      transform: scale(1.3);
+
+}
+
+.active-dot {
+  background-color: rgb(255, 215, 0); /* Highlight the current dot */
+  
+}
+
+    /* General styles for the product card */
+    .product-card {
+      width: 250px;
+      border: 1px solid #ddd;
+      font-family: Arial, sans-serif;
+      background-color: rgba(246, 246, 246,0.9);      
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+                  border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      overflow: hidden; /* Ensures the images don’t overflow */
+    }
+
+    /* Hover effect for zoom-in animation */
+    .product-card:hover {
+      transform: scale(1.05);
+      background-color: rgba(248, 248, 248,1);
+      
+    }
+
+    /* Container for images (both default and hover) */
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      height: 250px;
+    }
+
+    /* Default image */
+    .product-image-default {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+    }
+
+    /* Hover image (initially hidden) */
+    .product-image-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0; /* Hidden initially */
+      transition: opacity 0.5s ease;
+    }
+
+    /* On hover, show the hover image and hide the default image */
+    .product-card:hover .product-image-hover {
+      opacity: 1;
+    }
+
+    .product-card:hover .product-image-default {
+      opacity: 0;
+    }
+    /* Product information */
+    .product-info {
+      padding: 10px;
+    }
+
+    .product-name {
+      font-size: 22px;
+      margin: 8px 0;
+      margin-bottom: -10px;
+      margin-top: 10px;
+      text-align: center;
+      font-weight: 0;
+        font-family: "Times New Roman", Times, serif;
+
+    }
+
+    .product-type {
+      font-size: 15px;
+      color: rgb(50,50,50);
+      margin-bottom: 8px;
+        font-family: "Times New Roman", Times, serif;
+      text-align: center;
+
+    }
+
+    .product-description {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 10px;
+        font-family: "Times New Roman", Times, serif;
+      text-align: center;
+
+    }
+        .product-price {
+      font-size: 16px;
+      color: #28a745;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    /* Button at the bottom */
+    .product-buttons {
+      text-align: center;
+    }
+
+    .product-button {
+      padding: 10px;
+      font-size: 14px;
+      color: white;
+      background-color: rgb(30,30,30);
+      border: none;
+      border-radius: 0px;
+      cursor: pointer;
+      width: 100%;
+      border-top: 1px solid #ddd;
+      transition: background-color 0.5s ease;
+
+    }
+
+    .product-button:hover {
+      background-color: rgb(255, 215, 0);
+      color: black;
+      font-weight: 700;
+      
+    }
+
+    /* Grid container and layout */
+    .product-grid-container {
+      display: flex;
+      justify-content: center; /* Ensures the grid container is centered */
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center; /* Centers items inside the grid */
+      width: 80%;
+      max-width: 1200px; /* Ensures grid doesn’t stretch too wide */
+    }
+  img.big-img {
+    display:block;
+    width:100%;
+  }
+  
+/* Media query that adjust the contents when the screen is smaller */
+@media screen and (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px; /* Adjusted padding */
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+        margin-right: 0px;
+        width: 205px; /* Adjust width as needed */ 
+            transition: transform 0.2s ease-in-out;
+
+    }
+    
+    .logo:hover {
+      transform: scale(1.1);
+}
+
+    .title, .tagline {
+        text-align: center; /* Centering title and tagline */
+    }
+
+    nav {
+        margin: 20px auto; /* Centering navigation */
+    }
+        /* Text and button overlay on slideshow */
+    .slideshow-text {
+      position: absolute;
+	  text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      z-index: 2; /* Makes sure the text stays on top */
+    }
+
+    .slideshow-text h1 {
+      font-size: 72px;
+      margin: 0;
+
+    }
+
+    .slideshow-text p {
+      font-size: 36px;
+      margin: 10px 0;
+      padding-bottom: 20px;
+    }
+
+    .slideshow-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: black;
+      background-color: yellow;
+      border: 2px solid white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+
+    }
+
+    .slideshow-button:hover {
+            transform: scale(1.5);
+
+    }
+        .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center; /* Centers items inside the grid */
+      width: 100%;
+      max-width: 1200px; /* Ensures grid doesn’t stretch too wide */
+    }
+    
+}
+
+nav ul li a {
+    color: black;
+    font-size: 2.2vh;
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 215, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+    
+}
+
+nav ul li a:hover {
+    color: rgb(245, 205, 0);
+    transform: scale(1.2);
+    
+}
+
+nav ul li:hover {
+    background-color: rgba(0,0,59,0);
+    border-radius: 25px;
+}
+
+header h1t:hover {
+    color: rgb(255, 215, 0); /* Yellow color on hover */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+header pt:hover {
+    color: rgb(255, 215, 0); /* Yellow color on hover */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+
+/* Keyframes for the slide-down animation */
+@keyframes slideDown {
+    0% {
+        top: -100px; /* Off the screen */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        top: 0px; /* Slide into normal position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+
+/* Center the product showcase container */
+.product-showcase {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center everything vertically */
+    gap: 40px; /* Space between the image grid and product info */
+    width: 80%; /* Adjust the width to fit within the page */
+    max-width: 1200px;
+    background-color: #fff;
+        border-radius: 15px;
+
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center horizontally */
+}
+
+/* Photo Grid Section */
+.photo-grid {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    gap: 20px; /* Space between the photos */
+    align-items: center; /* Center photos vertically */
+}
+
+/* Main photo styling */
+.main-photo {
+    display: flex;
+    justify-content: center; /* Center main photo horizontally */
+    align-items: center;
+    cursor: pointer;
+            border-radius: 20px;
+
+}
+
+.main-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;            border-radius: 25px;
+
+                                    transition: transform 0.3s ease;
+
+}
+
+.main-photo img:hover {
+    transform: scale(1.01);
+}
+
+/* Secondary photos aligned vertically */
+.secondary-photos {
+    display: flex;
+    flex-direction: column; /* Stack secondary images vertically */
+    gap: 15px; /* Gap between thumbnails */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for individual thumbnails */
+.secondary-photos img {
+    width: 80px; /* Thumbnails size */
+    height: 80px; /* Make them square */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+
+}
+
+/* Hover effect for secondary photos */
+.secondary-photos img:hover {
+    transform: scale(1.05);
+}
+
+/* Product title */
+.product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Product price */
+.price {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Product description */
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Order button */
+.order-button {
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      background-color: rgb(30,30,30);
+      border: none;
+      border-radius: 0px;
+      cursor: pointer;
+      width: 30%;
+      border-top: 1px solid #ddd;
+      transition: background-color 0.5s ease;
+      min-width: 50%;
+}
+
+/* Hover effect for order button */
+.order-button:hover {
+      background-color: rgb(255, 215, 0);
+      color: black;
+      font-weight: 700;}
+
+/* Media Query for smaller screens below 1000px */
+@media (max-width: 900px) {
+    /* Stack the items vertically */
+    .product-showcase {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* Stack the photo grid vertically */
+    .photo-grid {
+        flex-direction: column;
+        align-items: center;
+            	padding-top: 40px;
+
+    }
+
+    /* Main photo styling for mobile */
+    .main-photo img {
+        width: 60%; /* Full width for smaller screens */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    /* Secondary photos adjustments */
+    .secondary-photos {
+        flex-direction: row; /* Display secondary images horizontally */
+        gap: 10px;
+    }
+
+    .secondary-photos img {
+
+    }
+
+    /* Center product info text */
+    .product-info {
+        align-items: center; /* Center text for smaller screens */
+        text-align: center;
+    }
+
+    /* Product title font size adjustment */
+    .product-info h1 {
+        font-size: 3rem;
+    }
+
+    /* Price font size adjustment */
+    .price {
+        font-size: 2rem;
+    }
+
+    /* Button size adjustment */
+    .order-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+              max-width: 80%;
+
+    }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* Order button */
+.title-button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: rgb(255, 215, 0);
+      color: black;
+      border-radius: 25px;
+      font-weight: 700;
+      cursor: pointer;
+      min-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+      transition: transform 0.3s ease;
+}
+
+/* Hover effect for order button */
+.title-button:hover {
+          transform: scale(1.05);
+
+      color: black;
+      font-weight: 700;}
+
+.footer {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center everything vertically */
+    width: 100%; /* Adjust the width to fit within the page */
+    background-color: #fff;
+    padding: 20px;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center horizontally */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+      border-top: 7px solid rgb(255, 215, 0);
+      margin-top: 20px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: rgb(255, 215, 0);
+
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.social-icons img:hover {
+    filter: none;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+}
+        /* Modal container */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Modal content box */
+        .modal-content {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        /* Form inside modal */
+        .modal-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-content input {
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .modal-content button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #45a049;
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .close:hover, .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
