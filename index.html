@@ -2,82 +2,63 @@
 <html lang="en">
 
     <!-- HEAD SECTION OF WEBSITE : Includes setup for rest of wesbite like title, icon and styles -->
-    <!-- HEAD SECTION OF WEBSITE : Includes setup for rest of wesbite like title, icon and styles -->
-    <!-- HEAD SECTION OF WEBSITE : Includes setup for rest of wesbite like title, icon and styles -->
-    <!-- HEAD SECTION OF WEBSITE : Includes setup for rest of wesbite like title, icon and styles -->
-    <!-- HEAD SECTION OF WEBSITE : Includes setup for rest of wesbite like title, icon and styles -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebel Ruins Cork</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/rebelruinslogo_1.png">
-    <script src="scripts.js"></script>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Publishing Website</title>
-    <!-- FontAwesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebel Ruins Cork</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.png">
+<script src="scripts.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- FontAwesome Link for Social Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-    <!-- BODY SECTION OF WEBSITE : Includes Website Header, Page Contents and Website Footer -->
-    <!-- BODY SECTION OF WEBSITE : Includes Website Header, Page Contents and Website Footer -->
-    <!-- BODY SECTION OF WEBSITE : Includes Website Header, Page Contents and Website Footer -->
-    <!-- BODY SECTION OF WEBSITE : Includes Website Header, Page Contents and Website Footer -->
     <!-- BODY SECTION OF WEBSITE : Includes Website Header, Page Contents and Website Footer -->
 
 <body>
 
-    <!-- Header Section -->
+<!-- Header Section -->
+<header>
+<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a></div>
+<div class="header-text"> 
+<h1t class="title">REBEL RUINS CORK</h1t>
+<br>
+<pt class="tagline">Recycled Art, Books, Games & Tarot Cards</pt>
+</div>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">About</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="https://maxwell-jc.github.io/corkgamecrafters/index.html" target='blank'>Charity</a></li>
+</ul>
+</nav>
+</header>
 	
-	<header>
-		    <a href="index.html"><img src="images/rebelruinslogo_1.png" alt="Logo" class="logo"></a></div>
-		<div class="header-text"> 
-	    <h1t class="title">REBEL RUINS CORK</h1t>
-	    <br>
-	    <pt class="tagline">Recycled Art, Books, Games & Tarot Cards</pt>
-		</div>
-	</div>
-	    <nav>
-	        <ul>
-	            <li><a href="index.html">About</a></li>
-	            <li><a href="games.html">Shop</a></li>
-	            <li><a href="events.html">Events</a></li>
-	            <li><a href="events.html">Charity</a></li>
-	            <li><a href="events.html">Contact</a></li>
-	        </ul>
-	    </nav>
-	</header>
-	
-
+<!-- Slideshow Section -->
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="images/bg5_1.png" style="width:100">
-  <img class="mySlides" src="images/dkwjndkwqnkjqwdw_1.png" style="width:100%">
-  <img class="mySlides" src="images/bg5_1.png" style="width:100%">
-  <img class="mySlides" src="images/dkwjndkwqnkjqwdw_1.png" style="width:100%">
+<img class="mySlides" src="images/slide1.png" style="width:100">
+<img class="mySlides" src="images/slide2.png" style="width:100%">
   
-  <!-- Text and Button overlay -->
-  <div class="slideshow-text">
-    <h1>Welcome</h1>
-    <p>Explore our latest range of books, games & tarot cards</p>
-    <a href="#" class="slideshow-button">Explore Here</a>
-  </div>
-
+<!-- Slideshow Text and Button overlay -->
+<div class="slideshow-text">
+<h1>Welcome</h1>
+<p>Explore recycled books, games & tarot cards</p>
+<a href="shop.html" class="slideshow-button">Explore Here</a>
+</div>
 </div>
 
-
-  <!-- Navigation dots -->
-  <div class="dots-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div>
+<!-- Slideshow Navigation dots -->
+<div class="dots-container">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
 </div>
-
-
+</div>
 
 <script>
 var myIndex = 0;
@@ -121,279 +102,193 @@ function changeMainImage(image) {
 
 
 
-<!-- Grid container -->
-<div class="product-grid-container">
-  <div class="product-grid">
-    <!-- Example product card 1 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers2.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_1.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Rock Opera</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-        <p class="product-description">This is a description for Product 1. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
 
-    <!-- Example product card 2 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers3.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_2.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Deities</h3>
-        <p class="product-type">Tabletop Role Playing Game</p>
-        <p class="product-description">This is a description for Product 2. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
-
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
     
-    <!-- Example product card 3 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_3.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Solaris</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-        <p class="product-description">This is a description for Product 1. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
-
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
-    
-    <!-- Example product card 4 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers4.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_2.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Garden of Eden</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-                <p class="product-description">This is a description for Product 2. Highlight key features and benefits.</p>
-
-        <p class="product-price">€25.00</p>
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
-
-    <!-- Add more product cards as needed -->
-  </div>
+   
+<div class="product-showcase">
+<!-- Photo Grid Section -->
+<div class="photo-grid">
+<div class="main-photo">
+<img id="mainImage" src="images/profile.png" alt="Main Photo">
 </div>
-	
-	   <div class="product-showcase">
-        <!-- Photo Grid Section -->
-        <div class="photo-grid">
-            <div class="main-photo">
-                <img id="mainImage" src="images/womnkers_1.png" alt="Main Photo">
-            </div>
-            <div class="secondary-photos">
-                <img class="thumbnail" src="images/womnkers_1.png" alt="Secondary Photo 1" onclick="changeMainImage(this)">
-                <img class="thumbnail" src="images/wombers3.jpg" alt="Secondary Photo 2" onclick="changeMainImage(this)">
-                <img class="thumbnail" src="images/wombers2.jpg" alt="Secondary Photo 2" onclick="changeMainImage(this)">
-            </div>
-        </div>
+</div>
 
-        <!-- Product Information Section -->
-        <div class="product-info">
-            <h1>Deities</h1>
-			<p class="description">Role Playing Game</p>
-            <p class="price">€35.00 • Free Shipping</p>
-            <p class="description">This is a short description of the product, highlighting its main features and benefits. It's made from high-quality materials and designed to last.</p>
-            <button class="order-button">Order Now</button>
-        </div>
-    </div>
+<!-- Product Information Section -->
+<div class="product-info">
+<h1>What is Rebel Ruins ?</h1>
+<p class="description">Hi there!! I’m Max and I make eco friendly art in Cork. All products are handmade from 100% recycled materials. This is my shop where you can order all my bits n pieces and see what markets I'll be appearing at next!<br><br>All of my books, games and tarot are written, designed and hand made by me so if you have any questions, feel free to get in touch!
+<br><br>
+<a href="shop.html"target="_blank"><button class="order-button">View Products</button></a>         
+</div>
+</div>   
     
-            <button class="title-button">New Releases</button>
-            
-            
+    
             
 
 <!-- Grid container -->
 <div class="product-grid-container">
-  <div class="product-grid">
-    <!-- Example product card 1 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers2.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_1.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Rock Opera</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-        <p class="product-description">This is a description for Product 1. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
 
-    <!-- Example product card 2 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers3.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_2.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Deities</h3>
-        <p class="product-type">Tabletop Role Playing Game</p>
-        <p class="product-description">This is a description for Product 2. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
+<a href="https://www.etsy.com/ie/listing/1831585595/rock-opera-major-arcana-tarot-cards?click_key=f5c6456bbe0461510e3bb000f2a7489d2089089a%3A1831585595&click_sum=f12e3fc1&ref=shop_home_active_2" target="blank">
+<div class="product-grid">
+<!-- Example product card 1 -->
+<div class="product-card">
+<div class="product-image-container">
+<!-- Default image -->
+<img src="images/prockopera.jpg" alt="Product Image" class="product-image-default">
+<!-- Hover image -->
+<img src="images/mrockopera.png" alt="Hover Image" class="product-image-hover">
+</div>
+<div class="product-info">
+<h3 class="product-name">Rock Opera</h3>
+<p class="product-type">Major Arcana Tarot Cards</p>
+<p class="product-description">Inspired by Greek mythology and listening to all of Queen's albums</p>
+<p class="product-price">€18.00</p>
+</div>
+<div class="product-buttons">
+<button class="product-button">View</button>
+</div>
+</div>
+</a>
 
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
+<!-- Example product card 2 -->
+<a href="https://www.etsy.com/ie/shop/RebelRuinsIE" target="blank">
+<div class="product-card">
+<div class="product-image-container">
+<!-- Default image -->
+<img src="images/pbotanicals.png" alt="Product Image" class="product-image-default">
+<!-- Hover image -->
+<img src="images/mbotanicals.png" alt="Hover Image" class="product-image-hover">
+</div>
+<div class="product-info">
+<h3 class="product-name">Botanicals</h3>
+<p class="product-type">Major Arcana Tarot Cards</p>
+<p class="product-description">Pressed flowers and Plants from around cork city arranged into associated tarot cards</p>
+<p class="product-price">€18.00</p>
+</div>
+<div class="product-buttons">
+<button class="product-button">View</button>
+</div>
+</div>
+ </a>
+   
+<!-- Example product card 3 -->
+<a href="https://www.etsy.com/ie/listing/1817431144/solaris-major-arcana-tarot-cards?click_key=87f52f45ed6210e1ad1afe0f2cb91959bdf08b19%3A1817431144&click_sum=f2e702ab&ref=shop_home_active_1" target="blank">
+<div class="product-card">
+<div class="product-image-container">
+<!-- Default image -->
+<img src="images/psolaris.jpg" alt="Product Image" class="product-image-default">
+<!-- Hover image -->
+<img src="images/msolaris.png" alt="Hover Image" class="product-image-hover">
+</div>
+<div class="product-info">
+<h3 class="product-name">Solaris</h3>
+<p class="product-type">Major Arcana Tarot Cards</p>
+<p class="product-description">Inspired by the similarities between deep sea bioluminescence and stargazing</p>
+<p class="product-price">€18.00</p>
+</div>
+<div class="product-buttons">
+<button class="product-button">View</button>
+</div>
+</div>
+</a>
     
-    <!-- Example product card 3 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_3.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Solaris</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-        <p class="product-description">This is a description for Product 1. Highlight key features and benefits.</p>
-        <p class="product-price">€25.00</p>
+<!-- Example product card 4 -->
+<a href="https://www.etsy.com/ie/listing/1817389270/garden-of-eden-major-arcana-tarot-deck?click_key=2bb28308bd07cf6fe996d0f2af5f10beecde62fc%3A1817389270&click_sum=7edabc40&ref=shop_home_active_3" target="blank">
+<div class="product-card">
+<div class="product-image-container">
+<!-- Default image -->
+<img src="images/pgardenofeden.jpg" alt="Product Image" class="product-image-default">
+<!-- Hover image -->
+<img src="images/mgardenofeden.png" alt="Hover Image" class="product-image-hover">
+</div>
+<div class="product-info">
+<h3 class="product-name">Garden of Eden</h3>
+<p class="product-type">Major Arcana Tarot Cards</p>
+<p class="product-description">Kaleidoscopic patterns constructed from flora to mimic biblically accurate angels</p>
+<p class="product-price">€18.00</p>
+</div>
+<div class="product-buttons">
+<button class="product-button">View</button>
+</div>
+</div>
+</a>
+<!-- Add more product cards as needed -->
 
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
-    
-    <!-- Example product card 4 -->
-    <div class="product-card">
-      <div class="product-image-container">
-        <!-- Default image -->
-        <img src="images/wombers4.jpg" alt="Product Image" class="product-image-default">
-        <!-- Hover image -->
-        <img src="images/wamby_2.png" alt="Hover Image" class="product-image-hover">
-      </div>
-      <div class="product-info">
-        <h3 class="product-name">Garden of Eden</h3>
-        <p class="product-type">Major Arcana Tarot Cards</p>
-                <p class="product-description">This is a description for Product 2. Highlight key features and benefits.</p>
 
-        <p class="product-price">€25.00</p>
-      </div>
-      <div class="product-buttons">
-        <button class="product-button">View</button>
-      </div>
-    </div>
+</div>
+</div>
 
-    <!-- Add more product cards as needed -->
-  </div>
+            
+<div class="nextevent-showcase">
+<!-- Photo Grid Section -->
+<div class="photo-grid">
+<div class="main-photo">
+<img id="mainImage" src="images/lough.jpg" alt="Main Photo">
+</div>
+</div>
+<!-- Product Information Section -->
+<div class="product-info">
+<h1>Lough Christmas Market</h1>
+<p class="location">29/11/2024 • The Lough Cafe, Cork City</p>
+<p class="description">Handcrafted gifts and holiday decor by local artists. Warm drinks and festive treats from our café. A cozy, welcoming space to get you into the Christmas spirit! Come support local artists, shop small, and enjoy a delightful evening with friends and family!</p>
+<a href="https://www.instagram.com/theloughcafe/"target="_blank">
+<button class="order-button">View</button>
+</a>        
+</div>
 </div>
 
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <p>We publish games that fuel the imagination and inspire thousands of players nationwide.</p>
-            </div>
 
-            <div class="footer-column">
-                <h3>Get in Touch</h3>
-                <ul>
-                    <li>Email: support@gamepublishing.com</li>
-                    <li>Phone: +123 456 789</li>
-                    <li>Address: 123 Game Studio St., Imaginary City</li>
-                </ul>
-            </div>
+<footer>
+<div class="footer-container">
 
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 Cork Game Crafters All rights reserved.</p>
-        </div>
-    </footer>
+<div class="footer-column">
+<h3>Contact</h3>
+<ul>
+<li>Email: rebelruinsie@gmail.com</li>
+<li>Instagram: @rebelruinsie</li>
+</ul>
+</div> 
+
+<div class="footer-column">
+<h3>Rebel Ruins IE</h3>
+<ul>
+<li>Art, Books, Games & Tarot</li>
+<li>property of Maxwell JC</li>
+</ul>
+</div> 
+
+<div class="footer-column">
+<a href="https://www.etsy.com/ie/shop/RebelRuinsIE" target="blank">
+<h3>Etsy Store</h3>
+<ul>
+<li>Click <u>here</u> to visit my Etsy store</li>
+</ul>
+</a>
+</div>
+
+<div class="footer-column">
+<h3>Socials</h3>
+<ul>
+<div class="social-icons">
+<div class="social-icons">
+<a href="https://www.instagram.com/rebelruinsie/"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</ul>
+</div> 
+
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2024 Rebel Ruins IE • All rights reserved</p>
+</div>
+</footer>
     
-  <!-- Video Slideshow Code
 
-
-<div class="w3-content w3-display-container">
-  <video class="mySlides" width="100%" autoplay muted loop>
-    <source src="videos/ween.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
-  <video class="mySlides" width="100%" autoplay muted loop>
-    <source src="videos/yeah.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
-  <video class="mySlides" width="100%" autoplay muted loop>
-    <source src="videos/ween.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
-  <video class="mySlides" width="100%" autoplay muted loop>
-    <source src="videos/yeah.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="slideshow-text">
-    <h1>Welcome</h1>
-    <p>Explore our latest range of books, games & tarot cards</p>
-    <a href="#" class="slideshow-button">Explore Here</a>
-  </div>
-</div>
-
-<div class="dots-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-
--->
 
 </body>
 </html>
