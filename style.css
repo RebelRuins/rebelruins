@@ -13,7 +13,7 @@ header {
 body {
   background-image: url("images/background.png") ;
 background-size: auto;
-  background-color: rgb(242, 242, 242); /* Change to desired background color */
+  background-color: rgb(255, 255, 255); /* Change to desired background color */
   background-position: center;
     background-repeat: repeat-y;
   margin: 0;
