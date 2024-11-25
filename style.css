@@ -8,15 +8,15 @@ header {
     padding: 40px;
     background-size: cover;
 	background-position: center;	
+
 }
 body {
-  background-image: url("images/weber copy 2.png") ;
+  background-image: url("images/background.png") ;
 background-size: auto;
   background-color: rgb(242, 242, 242); /* Change to desired background color */
   background-position: center;
+    background-repeat: repeat-y;
   margin: 0;
-  background-attachment: fixed;
-      position: relative;
     top: -100px; /* Start off the screen (above the viewport) */
     opacity: 0;
       animation: slideDown 1s ease-out forwards; /* Trigger the animation */
@@ -31,6 +31,8 @@ background-size: auto;
 .logo:hover {
       transform: scale(1.2);
 }
+
+
 
 h1t {
     color: black;
@@ -95,6 +97,7 @@ a {
   position: relative;
   height: 60%;
 
+
 }
 .w3-content {
   position: relative;
@@ -102,9 +105,9 @@ a {
   overflow: hidden;
   border-top: 7px solid rgb(255, 215, 0);
   border-bottom: 7px solid rgb(255, 215, 0);
-  
-
 }
+
+
 .mySlides {
   width: 100%;
     height: 100%;
@@ -367,6 +370,8 @@ a {
         padding-top: 30px;
         justify-content: center;
     }
+    
+
 
     .logo {
         margin-bottom: 30px;
@@ -500,7 +505,6 @@ header pt:hover {
 }
 
 
-/* Center the product showcase container */
 .product-showcase {
     display: flex;
     justify-content: center; /* Center the grid horizontally */
@@ -509,11 +513,80 @@ header pt:hover {
     width: 80%; /* Adjust the width to fit within the page */
     max-width: 1200px;
     background-color: #fff;
-        border-radius: 15px;
-
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Center horizontally */
+    position: relative; /* Ensure relative positioning for ::before to work */
+    overflow: hidden; /* Hide any overflow from the banner */
+}
+
+.featured-showcase {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center everything vertically */
+    gap: 40px; /* Space between the image grid and product info */
+    width: 80%; /* Adjust the width to fit within the page */
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center horizontally */
+    position: relative; /* Ensure relative positioning for ::before to work */
+    overflow: hidden; /* Hide any overflow from the banner */
+}
+
+.featured-showcase::before {
+    content: 'FEATURED';
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-45deg);
+    transform-origin: 0 0;
+    width: 200px; /* Adjust width of the banner */
+    padding: 5px 0; /* Adjust padding for spacing */
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow to the banner */
+}
+
+.nextevent-showcase {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center everything vertically */
+    gap: 40px; /* Space between the image grid and product info */
+    width: 80%; /* Adjust the width to fit within the page */
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center horizontally */
+    position: relative; /* Ensure relative positioning for ::before to work */
+    overflow: hidden; /* Hide any overflow from the banner */
+}
+
+.nextevent-showcase::before {
+    content: 'NEXT MARKET';
+    position: absolute;
+    top: 120px;
+    left: -20px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-45deg);
+    transform-origin: 0 0;
+    width: 200px; /* Adjust width of the banner */
+    padding: 5px 0; /* Adjust padding for spacing */
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow to the banner */
 }
 
 /* Photo Grid Section */
@@ -530,17 +603,15 @@ header pt:hover {
     justify-content: center; /* Center main photo horizontally */
     align-items: center;
     cursor: pointer;
-            border-radius: 20px;
-
+    border-radius: 20px;
 }
 
 .main-photo img {
     width: 300px;
     height: 300px;
-    object-fit: cover;            border-radius: 25px;
-
-                                    transition: transform 0.3s ease;
-
+    object-fit: cover;            
+    border-radius: 25px;
+	transition: transform 0.3s ease;
 }
 
 .main-photo img:hover {
@@ -585,6 +656,13 @@ header pt:hover {
     margin-bottom: 15px;
 }
 
+/* Product price */
+.location {
+    font-size: 1rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
 /* Product description */
 .description {
     font-size: 1rem;
@@ -616,8 +694,33 @@ header pt:hover {
 
 /* Media Query for smaller screens below 1000px */
 @media (max-width: 900px) {
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-size: cover;
+	background-position: center;
+  background-color: rgb(255, 255, 255); /* Change to desired background color */
+}
     /* Stack the items vertically */
     .product-showcase {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    /* Stack the items vertically */
+    .nextevent-showcase {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    
+        /* Stack the items vertically */
+    .featured-showcase {
         flex-direction: column;
         padding: 10px;
         gap: 20px;
@@ -655,7 +758,7 @@ header pt:hover {
 
     /* Product title font size adjustment */
     .product-info h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     /* Price font size adjustment */
@@ -668,7 +771,35 @@ header pt:hover {
         padding: 8px 16px;
         font-size: 1rem;
               max-width: 80%;
+              margin:20px;
 
+    }
+    /* Product description */
+    .description {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+        margin-bottom: 20px;
+        padding-left: 40px;
+                padding-right: 40px;
+
+    }
+}
+
+
+@media (max-width: 570px) {
+
+
+    /* General styles for the product card */
+    .product-card {
+      width: 350px;
+}
+
+    /* Container for images (both default and hover) */
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      height: 350px;
     }
 }
 
@@ -729,15 +860,17 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-left: 150px;
+    padding-right: 150px;
     flex-wrap: wrap;
     
 }
 
 .footer-column {
     flex: 1;
-    min-width: 250px;
+    min-width: 150px;
     margin: 0 20px;
 }
 
@@ -821,6 +954,15 @@ footer {
             justify-content: center;
             align-items: center;
         }
+        
+		.social-icons a {
+    margin-right: 5px;
+        margin-left: 5px;
+
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
 
         /* Modal content box */
         .modal-content {
