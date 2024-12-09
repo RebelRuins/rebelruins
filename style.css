@@ -865,7 +865,11 @@ footer {
     padding-left: 150px;
     padding-right: 150px;
     flex-wrap: wrap;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .footer-column {
