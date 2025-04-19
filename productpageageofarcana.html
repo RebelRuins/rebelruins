@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebel Ruins - Recycled Art, Books, Games & Tarot Cards</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="cgclogo.png">
+<script src="scripts.js"></script>
+</head>
+
+<body>
+<div class="announcement-bar">
+<div class="carousel">
+<div class="carousel-item active">Designed in Cork City, Ireland</div>
+<div class="carousel-item">Printed with 100% Recycled Paper</div>
+</div>
+</div>
+
+<header>
+<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+<nav class="nav-links">
+<ul>
+<li><a href="index.html">About</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+<div class="product-page-wrapper">
+<div class="product-page">
+
+<!-- Left: Images -->
+<div class="image-section">
+<div class="main-image">
+<img id="mainImage" src="images/Rebel Ruins Product Mockups_5.png" alt="Main product image" />
+</div>
+<div class="thumbnails">
+<img class="thumbnail" src="images/Rebel Ruins Product Mockups_5.png" alt="Thumb 1" onclick="changeImage(this)" />
+<img class="thumbnail" src="images/IMG_1931.jpeg" alt="Thumb 2" onclick="changeImage(this)" />
+<img class="thumbnail" src="images/saiodjoiwjdw.png" alt="Thumb 3" onclick="changeImage(this)" />
+</div>
+</div>
+
+
+<!-- Right: Product Info -->
+<div class="info-section">
+<h1>Enter the Age of Arcana</h1>
+<p>Enter the Age of Arcana and battle your friends tarot card decks.</p>
+<p>€25.00</p>
+<div class="buttons">
+<a href="https://drive.google.com/file/d/1awN3hpVZ6T9AHu77htrjxJ5xANa7pADW/view"><button id="downloadBtn">Free Download</button></a>
+<a href="https://stripe.com/ie"><button id="purchaseBtn">Purchase</button></a>
+</div>
+<div class="product-details">
+<p><b>• This Product is currently unavailable to purchase online •</b></p>
+<ul>
+<li>Genre: Card Game</li>
+<li>Materials: 160gsm Recycled Bright White Favani Paper</li>
+<li>Includes: 1 Booklet</li>
+<li>Weight: 20g</li>
+<li>Dimensions: 148 x 210 millimeters (A5)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!-- JS inside the HTML -->
+<script>
+function changeImage(thumbnail) {
+const mainImage = document.getElementById("mainImage");
+mainImage.src = thumbnail.src;
+}
+document.getElementById("downloadBtn").addEventListener("click", () => {
+window.location.href = "https://example.com/download"; // Replace with real download link
+});
+document.getElementById("purchaseBtn").addEventListener("click", () => {
+window.location.href = "https://buy.stripe.com/test_12345"; // Replace with your Stripe link
+});
+</script>
+
+
+<footer class="site-footer">
+<div class="footer-content">
+
+<div class="footer-section about">
+<a href="index.html"><img src="images/logo.png" alt="Logo" class="footerlogo"></a>
+
+<h1>Our Books are Ruined</h1>
+<p>It's true, all of our products are made from recycled materials. We take great pride in creating incredible experiences sustainably. If you're interested in working with us, feel free to get in touch!</p>
+
+</div>
+<div class="footer-section contact-form">
+<h1>Get in Touch</h1>
+<form action="https://formspree.io/f/xnnpovqo" method="POST">
+<input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2025 Rebel Ruins IE. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+
+<!-- Announcement Bar Javascript -->
+
+<script>
+const items = document.querySelectorAll('.carousel-item');
+let index = 0;
+setInterval(() => {
+items[index].classList.remove('active');
+index = (index + 1) % items.length;
+items[index].classList.add('active');
+}, 3000); // Change every 3 seconds
+</script>
+
+<!-- Hamburger Menu Javascript -->
+
+
+</html>
+

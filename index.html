@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebel Ruins - Recycled Art, Books, Games & Tarot Cards</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="cgclogo.png">
+<script src="scripts.js"></script>
+</head>
+
+<body>
+<div class="announcement-bar">
+<div class="carousel">
+<div class="carousel-item active">Designed in Cork City, Ireland</div>
+<div class="carousel-item">Printed with 100% Recycled Paper</div>
+</div>
+</div>
+
+<header>
+<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+<nav class="nav-links">
+<ul>
+<li><a href="index.html">About</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="slideshow-container">
+
+<!-- Slide 1 -->
+<div class="slide slide-1">
+<div class="text-container text-right">
+<div>
+<h1>Enter A New Age <br>of Divination</h1>
+<a href="productpageageofarcana.html"><button class="button">Enter Here</button></a>
+</div>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide slide-2">
+<div class="text-container text-right">
+<div>
+<h1>Can you withstand <br>the Might of Malice?</h1>
+<a href="productpagemightofmalice.html"><button class="button">I Hope So</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+function showSlide(index) {
+slides.forEach((slide, i) => {
+slide.classList.remove('active');
+if (i === index) {
+slide.classList.add('active');
+}
+});
+}
+function nextSlide() {
+currentIndex = (currentIndex + 1) % totalSlides;
+showSlide(currentIndex);
+}
+showSlide(currentIndex);
+setInterval(nextSlide, 4000);
+</script>
+
+<section class="product-grid">
+
+<a href="productpageageofarcana.html">
+<div class="product-card">
+<div class="product-image">
+<img src="images/Rebel Ruins Product Mockups_5.png" alt="Product 1" class="primary-img">
+<img src="images/IMG_1928.jpeg" alt="Product 1 Hover" class="secondary-img">
+</div>
+<h3 class="product-name">Enter the Age of Arcana</h3>
+<p class="product-price">€25.00</p>
+</div>
+</a>
+
+<a href="productpagemightofmalice.html">
+<div class="product-card">
+<div class="product-image">
+<img src="images/Rebel Ruins Product Mockups_1.png" alt="Product 1" class="primary-img">
+<img src="images/Rebel Ruins Product Mockups_4.png" alt="Product 1 Hover" class="secondary-img">
+</div>
+<h3 class="product-name">Might of Malice</h3>
+<p class="product-price">Free Download</p>
+</div>
+</a>
+
+
+  <!-- Add more product cards as needed -->
+</section>
+
+
+<footer class="site-footer">
+<div class="footer-content">
+
+<div class="footer-section about">
+<a href="index.html"><img src="images/logo.png" alt="Logo" class="footerlogo"></a>
+
+<h1>Our Books are Ruined</h1>
+<p>It's true, all of our products are made from recycled materials. We take great pride in creating incredible experiences sustainably. If you're interested in working with us, feel free to get in touch!</p>
+
+</div>
+<div class="footer-section contact-form">
+<h1>Get in Touch</h1>
+<form action="https://formspree.io/f/xnnpovqo" method="POST">
+<input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2025 Rebel Ruins IE. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+
+<!-- Announcement Bar Javascript -->
+
+<script>
+const items = document.querySelectorAll('.carousel-item');
+let index = 0;
+setInterval(() => {
+items[index].classList.remove('active');
+index = (index + 1) % items.length;
+items[index].classList.add('active');
+}, 3000); // Change every 3 seconds
+</script>
+
+<!-- Hamburger Menu Javascript -->
+
+
+</html>
+
